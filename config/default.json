@@ -1,4 +1,6 @@
 {
   "mongoURI": "mongodb+srv://iamknk:iamknk@cluster0-5ispc.mongodb.net/test?retryWrites=true&w=majority",
-  "jwtSecret": "merimarzi"
+  "jwtSecret": "merimarzi",
+  "githubClientId": "fc83d2df756aa599832c",
+  "githubSecret": "745050fa358f6acd19686c60737f987b80f35f85"
 }
