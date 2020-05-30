@@ -32,6 +32,7 @@ export default function (state = initialState, action) {
         token: null,
         isAuthenicated: false,
         loading: false,
+        user: null,
       };
 
     case REGISTER_SUCCESS:
@@ -50,6 +51,7 @@ export default function (state = initialState, action) {
       return {
         ...state,
         token: null,
+        user: null,
         isAuthenicated: false,
         loading: false,
       };
