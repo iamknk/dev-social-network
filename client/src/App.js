@@ -12,6 +12,7 @@ import EditProfile from './components/profile-forms/EditProfile';
 import PrivateRoute from './components/routing/PrivateRoute';
 import AddExprience from './components/profile-forms/AddExprience';
 import AddEducation from './components/profile-forms/AddEducation';
+
 // Redux
 import { Provider } from 'react-redux';
 import store from './store';
