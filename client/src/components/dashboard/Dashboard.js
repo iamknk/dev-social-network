@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { getCurrentProfile } from '../../actions/profile';
 import { setAlert } from '../../actions/alert';
+import DashboardActions from './DashboardActions';
 import Spinner from '../layout/Spinner';
 
 const Dashboard = ({
@@ -17,7 +18,6 @@ const Dashboard = ({
   return loading && profile === null ? (
     <Fragment>
       <Spinner />
-      {console.log('Hwerweqw')}
     </Fragment>
   ) : (
     <Fragment>
@@ -26,7 +26,9 @@ const Dashboard = ({
         <i className="fas fa-user"></i> Welcome {user && user.name}
       </p>
       {profile !== null ? (
-        <Fragment>Hye</Fragment>
+        <Fragment>
+          <DashboardActions />
+        </Fragment>
       ) : (
         <Fragment>
           <p>You dont have profile.Pls Setup Your Profile</p>
