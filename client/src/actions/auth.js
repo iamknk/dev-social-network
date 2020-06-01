@@ -9,7 +9,7 @@ import {
   LOGOUT,
   CLEAR_PROFILE,
 } from './types';
-import Alert, { setAlert } from './alert';
+import { setAlert } from './alert';
 import setAuthToken from '../utils/setAuthToken';
 
 export const loadUser = () => async (dispatch) => {
